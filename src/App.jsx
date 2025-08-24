@@ -1,16 +1,18 @@
 import './App.css'
 import { Outlet } from "react-router";
+import Navbar from './components/Navbar/navbar';
 function App() {
   return (
+    <div className="flex flex-col items-center min-h-screen">
+      <Navbar/>
+      <div className='flex  justify-center '>
+          <Outlet />
+      </div>
+
     
-    <div className='items-center flex justify-center text-9xl bg-lime-700 text-white'>
-      <h1>
-        Book Verse
-      </h1>
-      <Outlet />
     </div>
-     
+  );
     
-  )
+   
 }
 export default App
