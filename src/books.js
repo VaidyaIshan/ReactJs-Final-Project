@@ -1,0 +1,136 @@
+// books.js
+import bookImage1 from "./assets/bookimages/Antidote.jpg";
+import bookImage2 from "./assets/bookimages/madammematisse.jpg";
+import bookImage3 from "./assets/bookimages/splinters.webp";
+import bookImage4 from "./assets/bookimages/Thegrapevine.jpg";
+import bookImage5 from "./assets/bookimages/badsummer.jpg";
+import bookImage6 from "./assets/bookimages/invisible.jpg";
+import bookImage7 from "./assets/bookimages/memorypiece.jpg";
+import bookImage8 from "./assets/bookimages/toto.jpg";
+import bookImage9 from "./assets/bookimages/Theeights.jpg";
+import bookImage10 from "./assets/bookimages/naples.webp";
+
+const books = [
+  {
+    id: "1",
+    name: "Antidote",
+    image: bookImage1,
+    description: "A powerful book exploring resilience and healing.",
+    brand: "Oliver Burkeman",
+    category: "Books",
+    price: 19.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 12,
+  },
+  {
+    id: "2",
+    name: "Madamme Matisse",
+    image: bookImage2,
+    description: "A novel inspired by art, love, and passion.",
+    brand: "Klara Blum",
+    category: "Books",
+    price: 22.99,
+    countInStock: 7,
+    rating: 4.7,
+    numReviews: 45,
+  },
+  {
+    id: "3",
+    name: "Splinter",
+    image: bookImage3,
+    description: "A thrilling story of survival and secrets.",
+    brand: "Sebastian Fitzek",
+    category: "Books",
+    price: 18.5,
+    countInStock: 5,
+    rating: 4.3,
+    numReviews: 20,
+  },
+  {
+    id: "4",
+    name: "The Grape Vine",
+    image: bookImage4,
+    description: "Stories intertwined like the grapevine.",
+    brand: "Laura McVeigh",
+    category: "Books",
+    price: 16.99,
+    countInStock: 8,
+    rating: 4.1,
+    numReviews: 15,
+  },
+  {
+    id: "5",
+    name: "Bad Summer People",
+    image: bookImage5,
+    description: "A gripping summer drama full of twists.",
+    brand: "Emma Rosenblum",
+    category: "Books",
+    price: 20.99,
+    countInStock: 12,
+    rating: 4.6,
+    numReviews: 30,
+  },
+  {
+    id: "6",
+    name: "Invisible Woman",
+    image: bookImage6,
+    description: "An inspiring look at overlooked voices.",
+    brand: "Caroline Criado Perez",
+    category: "Books",
+    price: 14.99,
+    countInStock: 6,
+    rating: 4.8,
+    numReviews: 50,
+  },
+  {
+    id: "7",
+    name: "Memory Piece",
+    image: bookImage7,
+    description: "A poetic exploration of memories and time.",
+    brand: "Lisa Ko",
+    category: "Books",
+    price: 17.49,
+    countInStock: 9,
+    rating: 4.4,
+    numReviews: 18,
+  },
+  {
+    id: "8",
+    name: "Toto Among the Murderers",
+    image: bookImage8,
+    description: "A tense crime story set in 1970s England.",
+    brand: "Sally J. Morgan",
+    category: "Books",
+    price: 21.99,
+    countInStock: 11,
+    rating: 4.2,
+    numReviews: 22,
+  },
+  {
+    id: "9",
+    name: "The Eighth Life",
+    image: bookImage9,
+    description: "A sweeping saga of a Georgian family across the 20th century.",
+    brand: "Nino Haratischwili",
+    category: "Books",
+    price: 25.99,
+    countInStock: 4,
+    rating: 4.9,
+    numReviews: 60,
+  },
+  {
+    id: "10",
+    name: "My Brilliant Friend (Naples series)",
+    image: bookImage10,
+    description: "The first novel in Elena Ferrante’s Neapolitan quartet.",
+    brand: "Elena Ferrante",
+    category: "Books",
+    price: 18.99,
+    countInStock: 10,
+    rating: 4.7,
+    numReviews: 80,
+  },
+];
+
+export default books;
