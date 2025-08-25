@@ -51,14 +51,14 @@ function CartPage() {
         <h2 className="text-3xl text-white font-bold">Shopping Cart</h2>
         <button
           onClick={handleClearCart}
-          className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
+          className="px-4 py-2 bg-red-500 text-white rounded-lg "
         >
           Clear Cart
         </button>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Cart Items */}
+       
         <div className="lg:col-span-2 space-y-4">
           {cartItems.map((item) => (
             <div
@@ -79,7 +79,6 @@ function CartPage() {
                 <p className="text-sm text-gray-500">by {item.brand}</p>
                 <p className="text-lg font-bold text-green-600">${item.price}</p>
 
-                {/* Quantity Controls */}
                 <div className="flex items-center mt-2">
                   <button
                     onClick={() => decrementQty(item)}
@@ -97,8 +96,6 @@ function CartPage() {
                   </button>
                 </div>
               </div>
-
-              {/* Price & Remove */}
               <div className="text-right">
                 <p className="text-lg font-bold">
                   ${(item.price * (item.qty || 1)).toFixed(2)}
@@ -114,7 +111,7 @@ function CartPage() {
           ))}
         </div>
 
-        {/* Order Summary */}
+
         <div className="bg-white rounded-xl shadow-md p-6 sticky top-6">
           <h3 className="text-xl font-bold mb-4">Order Summary</h3>
           <div className="flex justify-between mb-2">
