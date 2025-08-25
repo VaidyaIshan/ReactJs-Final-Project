@@ -19,7 +19,7 @@ export default function BookCard({ id, name, image, brand, category, price }) {
 
         <div className="mt-auto">
           <p className="text-base font-bold text-gray-800 mb-3">${price}</p>
-          <Link to={`/product/${id}`}>
+          <Link to={`/bookspage/${id}`}>
             <button className="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200">
               View Details
             </button>
