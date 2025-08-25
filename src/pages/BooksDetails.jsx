@@ -1,10 +1,17 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../slices/cartSlice";
 import books from "../books";
 
 export default function ProductDetailsPage() {
   const { id } = useParams();
+  const dispatch = useDispatch();
   const book = books.find((b) => b.id === id);
+
+  const handleAddToCart = () => {
+    dispatch(addToCart(book));
+  };
 
   if (!book) {
     return <h2 className="text-center text-red-500">Book not found!</h2>;
@@ -30,7 +37,10 @@ export default function ProductDetailsPage() {
             <p className="text-md text-gray-300 mb-4">In Stock: {book.countInStock}</p>
           </div>
           <div className="flex items-center">
-            <button className="bg-green-600 px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300">
+            <button 
+              onClick={handleAddToCart}
+              className="bg-green-600 px-6 py-2 rounded-lg hover:bg-green-700 transition duration-300"
+            >
               Add to Cart
             </button>
             <Link to="/bookspage" className="ml-4 text-blue-400 hover:underline transition duration-300">
